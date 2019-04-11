@@ -20,11 +20,6 @@ public class Prototype {
                 Arrays.asList("(1) This is a test sentence.", "(2) This is the second line.", "(3) And here is the finish."),
                 Arrays.asList("This is a test sentence.", "This is the second line.", "And here is the finish."));
 
-        System.out.println("|original|new|");
-        System.out.println("|--------|---|");
-        for (DiffRow row : rows) {
-            System.out.println("|" + row.getOldLine() + "|" + row.getNewLine() + "|");
-        }
 
         System.out.println("<html>");
         for (DiffRow row : rows) {
