@@ -13,7 +13,6 @@ public class Prototype {
         DiffRowGenerator generator = DiffRowGenerator.create()
                 .showInlineDiffs(true)
                 .inlineDiffByWord(true)
-                //.oldTag(f -> f ? "<strike>" : "</strike>")
                 .oldTag(f -> f ? "<span style=\"background-color: #FFE6E6\"><strike>" : "</strike></span>")
                 .build();
 
